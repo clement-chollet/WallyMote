@@ -1,0 +1,37 @@
+
+<ion-content padding>
+
+  <div>
+
+  </div>
+  
+
+  <div class="bottomBlock">
+    <button ion-button full color="twitter" class="testButtonDev" (click)='onClickScreen()'>
+      <ion-icon name="apps"></ion-icon>
+    </button>
+    <!--<button ion-button class="buttonDevBottom" (click)='onClickScreen()'>
+      <ion-icon name="apps"></ion-icon>
+    </button>-->
+    <div id="bottomButtonBar" [ngStyle]="{'display': visibilityDivButton }">
+      <button ion-button class="bottomButton" color="light" (click)='showAlert()'>
+        <div>
+            <ion-icon name="trash" style="font-size:25px;"></ion-icon>
+            <label class="label">Sup. bloc</label>
+        </div>
+      </button>
+      <button ion-button class="bottomButton" color="light" (click)='onClickTelecommande()'>
+        <div>
+          <ion-icon name="calculator" style="font-size:25px;"></ion-icon>
+          <label class="label">Télécommande</label>
+        </div>
+      </button>
+      <button ion-button class="bottomButton" color="light">
+        <div>
+          <ion-icon name="options" style="font-size:25px;"></ion-icon>
+          <label class="label">Param. du bloc</label> 
+        </div>
+      </button>
+    </div> 
+  </div>
+</ion-content>

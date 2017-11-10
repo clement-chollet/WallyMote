@@ -1,0 +1,8 @@
+{
+  "name": "WallyMote_tabs",
+  "app_id": "",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

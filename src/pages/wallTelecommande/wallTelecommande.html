@@ -1,0 +1,43 @@
+
+<ion-content padding>
+  <div style="margin-bottom: 50px; font-size: 18px;">
+    Télécommande du mur
+  </div>
+
+  <div>
+
+    <div class=soundButton>
+      <button ion-button outline (click)='onClickSoundButton()' >
+        <ion-icon name="{{nameIcon}}"></ion-icon>
+      </button>
+
+      <ion-item>
+        <ion-range min="0" max="100" [(ngModel)]="volume" color="twitter" pin="true">
+          <ion-icon range-left name="volume-mute"></ion-icon>
+          <ion-icon range-right name="volume-up"></ion-icon>
+        </ion-range>
+      </ion-item>
+    </div>
+
+    <div class="playerDiv">
+      <button ion-button outline>
+        <ion-icon name="rewind"></ion-icon>
+      </button>
+
+      <button ion-button outline (click)='onClickPlayer()'>
+        <ion-icon name="{{playIcon}}"></ion-icon>
+      </button>
+
+      <button ion-button outline>
+        <ion-icon name="fastforward"></ion-icon>
+      </button>
+    </div>
+
+    <div style="text-align: center">
+      <button ion-button outline>
+        <ion-icon name="square"></ion-icon>
+      </button>
+    </div>  
+
+  </div>
+</ion-content>
